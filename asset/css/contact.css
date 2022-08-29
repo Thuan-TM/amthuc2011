@@ -1,0 +1,64 @@
+.main_contact {
+    background: rgb(249, 245, 241);
+    padding: 3rem 0;
+}
+
+.infor_contact h2,
+.order h2 {
+    color: var(--card);
+    text-align: center;
+    font-size: 2.6rem;
+    font-weight: 600;
+    padding-bottom: 2.7rem;
+}
+
+.infor_contact {
+    font-size: 1.8rem;
+}
+
+.order {
+    font-size: 1.8rem;
+    margin-top: 3rem;
+}
+
+.order h2 {}
+
+.order input,
+.order select {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    outline: none;
+    margin-bottom: 2rem;
+    border-radius: .3rem;
+}
+
+.order .datban {
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border-radius: .3rem;
+    border: none;
+    outline: none;
+    background: var(--card);
+    color: white;
+
+}
+
+.order >div{
+    gap: 3rem;
+}
+@media screen and (max-width: 575px) {
+
+    .infor_contact h2,
+    .order h2 {
+        font-size: 2rem;
+    }
+    .infor_contact ,.order {
+        font-size: 1.4rem;
+    }
+    .order >div{
+        gap: 2rem;
+    }
+}

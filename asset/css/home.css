@@ -1,0 +1,246 @@
+/* banner */
+.banner-wrap {
+    margin: 1rem 0;
+    position: relative;
+    z-index: -1;
+}
+
+.banner-wrap img {
+    max-height: 40rem;
+}
+
+.banner-wrap .content {
+    position: absolute;
+    color: white;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 1.6rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.banner-wrap .content h1,
+.banner-wrap .content p {
+    width: 70%;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.banner-wrap .content h1 {
+    font-size: 3.2rem;
+    font-weight: 800;
+    letter-spacing: .2rem;
+}
+
+.banner-wrap .content p {
+    letter-spacing: .3rem;
+}
+
+.banner-wrap ul {
+    position: absolute;
+    bottom: 1rem;
+    display: flex;
+    gap: 2rem;
+    z-index: 999;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.banner-wrap ul li {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: white;
+}
+
+/* hero */
+.hero-wrap {
+    padding: 5rem 0;
+    gap: 2rem;
+}
+
+.hero-wrap>div:last-child {
+    gap: 2rem;
+    width: 100%;
+    height: 100%;
+
+}
+
+/*  */
+
+/* menu */
+.menu-wrap {
+    margin: 5rem 0;
+
+}
+
+.menu-wrap .menu-left li a {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--black-02);
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(72, 71, 71, 0.2);
+    display: block;
+}
+
+/*  */
+
+/* product */
+.product {
+    background: rgb(249, 245, 241);
+    margin: 10rem 0 5rem;
+    padding: 1rem 0 2rem;
+
+}
+
+.product-wrap .pizza {
+    padding-bottom: 2rem;
+}
+
+.product-wrap .pizza h1 {
+    color: var(--card);
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 2rem;
+    font-weight: 900;
+}
+
+.product-wrap .pizza .btn_ {
+    display: block;
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 2rem 0;
+
+
+}
+
+.product-wrap .pizza .btn_ span {
+    padding: 1rem 2rem;
+    background: var(--origin-color);
+    border-radius: 2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* fatnurger-wrap */
+.fatnurger-wrap {
+    padding: 2rem 0 5rem;
+}
+
+.fatnurger-wrap h1 {
+    text-align: center;
+    color: var(--card);
+    padding-bottom: 1.5rem;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.fatnurger-wrap .text li {
+    border-top: 1px solid #ccc;
+}
+
+.fatnurger-wrap .text li i {
+    float: right;
+}
+
+.fatnurger-wrap .text p {
+    font-size: 2.4rem;
+    font-weight: 500;
+    padding: 1.5rem 1rem 1rem;
+    transition: all .3s linear;
+    color: var(--origin-color);
+    background-color: white;
+}
+
+.fatnurger-wrap .text p i {
+    transition: all .3s linear;
+    transform: rotate(45deg);
+}
+
+.fatnurger-wrap .text p.collapsed {
+    color: var(--black-01);
+}
+
+.fatnurger-wrap .text p.collapsed i {
+    transition: all .3s linear;
+    transform: rotate(0);
+}
+
+.fatnurger-wrap .text p:hover {
+    background-color: rgba(0, 0, 0, .1) !important;
+}
+
+.fatnurger-wrap .aaaa {
+    font-size: 1.6rem;
+    padding-left: 1rem;
+}
+
+@media screen and (max-width: 575px) {
+
+    /* banner */
+    .banner-wrap {
+        min-height: 20rem;
+    }
+
+    .banner-wrap img {
+        min-height: 20rem;
+    }
+
+    .banner-wrap .content {
+        font-size: 1rem;
+    }
+
+    .banner-wrap .content h1 {
+        font-size: 1.8rem;
+        text-align: center;
+
+    }
+
+    .banner-wrap .content p {
+        letter-spacing: .1rem;
+    }
+
+    .banner-wrap .content h1,
+    .banner-wrap .content p {
+        width: 100%;
+        padding-bottom: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    /* banner */
+    .banner-wrap .content {
+        font-size: 1.2rem;
+    }
+
+    .banner-wrap .content h1 {
+        font-size: 2.2rem;
+    }
+
+    .banner-wrap .content p {
+        letter-spacing: .1rem;
+    }
+
+    /*  */
+    /* .hero-wrap */
+    .hero-wrap {
+        padding-bottom: 0;
+    }
+
+    /* product */
+    .product {
+        margin: 0;
+    }
+
+    /*  */
+    .fatnurger-wrap .text p {
+        font-size: 2rem
+    }
+}

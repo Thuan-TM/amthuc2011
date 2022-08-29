@@ -1,0 +1,27 @@
+
+.main_menu{
+    background: rgb(249, 245, 241);
+    padding-top: 1rem;
+}
+
+.category-wrap{
+    margin: 2.5rem 0;
+    font-size: 1.5rem;
+}
+.category-wrap a{
+    color: var(--black-01);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.category-wrap a.active{
+    color: black;
+}
+.category-wrap span{
+    padding-right: 1rem;
+}
+.category-wrap .select{
+    padding: 1rem;
+    outline: none;
+    border: #ccc;
+    box-shadow: #ccc 0px 8px 24px;
+}
